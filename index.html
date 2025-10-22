@@ -2,45 +2,39 @@
 <html>
 <head>
   <title>鄭老師國際英文課程</title>
-<!-- Meta Pixel Code -->
-<script>
-  
-const url = new URL(window.location.href);
-const source = url.searchParams.get('s');
-const userAgent = navigator.userAgentData.mobile;
-const device = userAgent ? "mobile"  : "pc"
-
-fbq('track', 'SourceFrom', {
-    device: device,
-    utm_source: source
-});
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1229901119179246');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- <script>
-      window.onload = function() {
-        setTimeout(function() {
-          window.location.href = "https://lin.ee/Z4YzMm0";
-        }, 1250); // 2秒後導向
-      }
-    </script> -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1229901119179246');
+    fbq('track', 'PageView');
+    
+    window.addEventListener('DOMContentLoaded', function() {
+      var url = new URL(window.location.href);
+      var source = url.searchParams.get('s') || "";
+      var device = /Mobile|Android|iP(hone|ad|od)/i.test(navigator.userAgent)
+                    ? "mobile" : "pc";
+      fbq('trackCustom', 'SourceFrom', {
+          device: device,
+          utm_source: source
+      });
+      setTimeout(function() {
+        window.location.href = "https://lin.ee/Z4YzMm0";
+      }, 1250); // 1.25秒後
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <body>
-        <p>正在為您自動跳轉加 LINE...</p>
-    </body>
+    <p>正在為您自動跳轉加 LINE...</p>
 </body>
 </html>
