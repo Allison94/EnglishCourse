@@ -23,7 +23,7 @@ src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
 <script>
   const source = url.searchParams.get('s');
   const userAgent = navigator.userAgent;
-  fbq('trackCustom', 'AddLine_Click', {
+  fbq('track', 'SourceFrom', {
         device: userAgent,
         utm_source: s
     });
