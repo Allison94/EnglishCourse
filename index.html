@@ -21,6 +21,7 @@ src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 <script>
+  const url = new URL(window.location.href);
   const source = url.searchParams.get('s');
   const userAgent = navigator.userAgent;
   fbq('track', 'SourceFrom', {
