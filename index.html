@@ -21,6 +21,12 @@ src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 <script>
+  const source = url.searchParams.get('s');
+  const userAgent = navigator.userAgent;
+  fbq('trackCustom', 'AddLine_Click', {
+        device: userAgent,
+        utm_source: s
+    });
       window.onload = function() {
         setTimeout(function() {
           window.location.href = "https://lin.ee/Z4YzMm0";
