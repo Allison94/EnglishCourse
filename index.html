@@ -4,6 +4,13 @@
   <title>鄭老師國際英文課程</title>
 <!-- Meta Pixel Code -->
 <script>
+const url = new URL(window.location.href);
+const source = url.searchParams.get('s');
+const userAgent = navigator.userAgent;
+fbq('track', 'SourceFrom', {
+    device: userAgent,
+    utm_source: source
+});
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -21,13 +28,6 @@ src="https://www.facebook.com/tr?id=1229901119179246&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 <script>
-  const url = new URL(window.location.href);
-  const source = url.searchParams.get('s');
-  const userAgent = navigator.userAgent;
-  fbq('track', 'SourceFrom', {
-        device: userAgent,
-        utm_source: source
-    });
       window.onload = function() {
         setTimeout(function() {
           window.location.href = "https://lin.ee/Z4YzMm0";
